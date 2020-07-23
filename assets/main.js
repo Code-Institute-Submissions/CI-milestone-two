@@ -50,7 +50,7 @@ function getMovie(){
             <h2>${movie.title}</h2>
             <ul class="list-group">
               <li class="list-group-item"><strong>Rated:</strong> ${movie.vote_average}</li>
-              <li class="list-group-item"><strong>Tagline:</strong> ${movie.tagline}</li>
+              <li class="list-group-item"><strong>Tagline:</strong> ${'"'+movie.tagline+'"'}</li>
               <li class="list-group-item"><strong>Genre:</strong> ${movie.genres[0].name}, ${movie.genres[1].name}</li>
               <li class="list-group-item"><strong>Released:</strong> ${movie.release_date}</li>
               <li class="list-group-item"><strong>Runtime:</strong> ${movie.runtime} min.</li>
