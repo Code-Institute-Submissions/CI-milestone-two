@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Should I watch This?</title>
     <link rel="stylesheet" href="https://bootswatch.com/4/solar/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -15,8 +16,13 @@
         </div>
       </div>
     </nav>
-
-    <div class="container">
+    <header>
+    <div class="row no-gutters">
+    <h1>It's overwhelming isnt it? So many options...</h1>
+    <h2>Let us help you decide if the thing you're thinking about maybe watching but are not really sure, but you probably will, is any good</h2>
+    </div>
+    </header>
+    <div class="container-fluid">
     	<div class="jumbotron">
 	    	<h3 class="text-center">Should I Watch This?</h3>
 	    	<form id="searchForm">
@@ -29,6 +35,71 @@
       <div id="movies" class="row"></div>
     </div>
 
+    <div class="modal" tabindex="-1" role="dialog" id="contact-modal">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Message Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email address:</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Messsage:</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" placeholder="Start Typing..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-outline-dark">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<footer class="container-fluid">
+        <div id="footer-mov" class="row">
+            <div class="col-sm-6 ft-contact">
+                <h5 class="uppercase general-sub">Contact</h5>
+                <p class="inline-block">Click to contact us</p>
+                <span class="sr-only">Contact Link</span>
+                <button type="button" class="btn btn-outline-dark" data-toggle="modal" data-target="#contact-modal">Contact</button>
+            </div>
+            <div class="col-sm-6 ft-social">
+                <h5 class="uppercase general-sub">Social Media</h5>
+                <ul class="list-inline social-links">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.facebook.com/onlyfumesandcorpses">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.youtube.com/results?search_query=only+fumes+and+corpses">
+                            <i class="fa fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">Youtube</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://twitter.com/ofachc">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://www.instagram.com/explore/tags/onlyfumesandcorpses/">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="assets/main.js"></script>

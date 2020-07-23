@@ -14,10 +14,10 @@ function getResult(searchText){
       $.each(movies, (index, movie) => {
         output+=`
           <div class="col-md-3">
-            <div class="well text-center">
+            <div class="tmdb text-center">
               <img src="https://image.tmdb.org/t/p/w500${movie.poster_path}">
               <h5>${movie.title}</h5>
-              <a onclick="movieSelected('${movie.id}')" class="btn btn-primary" href="#">Movie Details</a>
+              <a onclick="movieSelected('${movie.id}')" class="btn btn-primary" href="#">Details</a>
             </div>
           </div>
                 `
@@ -58,7 +58,7 @@ function getMovie(){
           </div>
         </div>
         <div class="row">
-          <div class="well">
+          <div class="tmdb">
             <h3>Plot</h3>
             ${movie.overview}
             <hr>
