@@ -32,7 +32,7 @@ function getResult(searchText){
 
 function movieSelected(id){
   sessionStorage.setItem('movieId', id);
-  window.location = 'search.html';
+  window.location = 'details.html';
   return false;
 }
 
@@ -49,11 +49,12 @@ function getMovie(){
           <div class="col-md-8">
             <h2>${movie.title}</h2>
             <ul class="list-group">
+              <li class="list-group-item"><strong>Rated:</strong> ${movie.vote_average}</li>
+              <li class="list-group-item"><strong>Tagline:</strong> ${movie.tagline}</li>
               <li class="list-group-item"><strong>Genre:</strong> ${movie.genres[0].name}, ${movie.genres[1].name}</li>
               <li class="list-group-item"><strong>Released:</strong> ${movie.release_date}</li>
-              <li class="list-group-item"><strong>Rated:</strong> ${movie.vote_average}</li>
               <li class="list-group-item"><strong>Runtime:</strong> ${movie.runtime} min.</li>
-              <li class="list-group-item"><strong>Production Companies:</strong> ${movie.production_companies[0].name} min.</li>
+              <li class="list-group-item"><strong>Revenue:</strong> ${`$`+movie.revenue.toFixed(0)}</li>
             </ul>
           </div>
         </div>
