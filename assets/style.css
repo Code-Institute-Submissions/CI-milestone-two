@@ -4,6 +4,28 @@
     margin-bottom:10px;
 }
 
+/* -------------------------------------Navbar */
+.nav-container {
+  clear: initial;
+  display:inline;
+  height : 2em;
+  position: relative;
+  margin: auto;
+  padding-top: 0px;
+}
+
+
+.nav-item {
+    display:inline;
+}
+
+ 
+
+
+/* -------------------------------------Header */
+.header {
+    clear:both;
+}
 
 /* -------------------------------------Footer */
 #footer-mov {
@@ -33,4 +55,13 @@
 @media(min-width:960px){
 #movies .col-md-3 .tmdb {
     height: 390px;
+}
+
+/*@media screen and (max-width:400px){
+#siwtnav {
+    display:none;
+    overflow: hidden;
+    }   
+.bg-primary {
+    display:none;
 }
