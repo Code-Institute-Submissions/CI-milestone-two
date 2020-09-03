@@ -38,6 +38,19 @@
     text-orientation: center;
 }
 
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.about-heading {
+    padding-top:20px;
+}
+
+/* -------------------------------------Images */
 .bgdimg {
     background-image: url("https://png.pngitem.com/pimgs/s/430-4302112_woman-scream-horror-classic-movie-woman-screaming-horror.png");
     background-position: center;
@@ -49,9 +62,27 @@
     padding:0;
 }
 
+.about-img {
+    position:relative;
+    margin:auto;
+}
+
+/* -------------------------------------About */
+.about-text {
+    width: 50%;
+    margin: 0 auto;
+    line-height: 25px;
+    display: inline-block;
+}
+
+.about-padding{
+    padding-top: 35px;
+}
+
 /* -------------------------------------Footer */
 #footer-mov {
     padding: 20px;
+    text-align: center;
 }
 
 /* -------------------------------------Search Results */
@@ -71,19 +102,38 @@
 .tmdb {
     position: relative;
     display:inline-block;
-    padding-top: 20px;
-}
-/* -------------------------------------Media Queries */
-@media(min-width:960px){
-#movies .col-md-3 .tmdb {
-    height: 390px;
+    padding-top: 3em;
 }
 
-/*@media screen and (max-width:400px){
-#siwtnav {
-    display:none;
-    overflow: hidden;
-    }   
-.bg-primary {
-    display:none;
+/* -------------------------------------Disqus */
+#disqus_thread {
+    margin-top: 4em;
+    margin-bottom: 4em;
+    padding: 20px;
+
 }
+/* -------------------------------------Media Queries */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 600px) {
+    .bgdimg {
+    display:none;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+ .bgdimg {
+    display:none;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #movies .col-md-3 .tmdb {
+    height: 390px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
