@@ -54,7 +54,6 @@ function getMovie(){
               <li class="list-group-item"><strong>Genre:</strong> ${movie.genres[0].name}, ${movie.genres[1].name}</li>
               <li class="list-group-item"><strong>Released:</strong> ${movie.release_date}</li>
               <li class="list-group-item"><strong>Runtime:</strong> ${movie.runtime} min.</li>
-              <li class="list-group-item"><strong>Revenue:</strong> ${`$`+movie.revenue.toFixed(0)}</li>
             </ul>
           </div>
         </div>
