@@ -19,12 +19,34 @@
     display:inline;
 }
 
- 
-
-
 /* -------------------------------------Header */
 .header {
     clear:both;
+}
+
+#jumboheader {
+    padding: 1.5em;
+    text-align:center;
+    margin:auto;
+    text-orientation: center;
+}
+
+#decidemsg {
+    padding: 1.5em;
+    text-align:center;
+    margin:auto;
+    text-orientation: center;
+}
+
+.bgdimg {
+    background-image: url("https://png.pngitem.com/pimgs/s/430-4302112_woman-scream-horror-classic-movie-woman-screaming-horror.png");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: auto;
+    background-color: white;  
+    height: 250px; 
+    margin:auto;
+    padding:0;
 }
 
 /* -------------------------------------Footer */
