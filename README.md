@@ -1,8 +1,20 @@
-# Denis Lymer Milestone Project 2 - Movie Recommendation Website
+# Denis Lymer Milestone Project 2 - Movie Recommendation Website - 'Should I Watch This?'
 My idea for my Milestone 2 project came from an almost throwaway comment from my girlfriend. While trying to select something for us to watch that evening, she had spent 20 minutes just browsing the options avaialble on Netflix and Amazon Prime.
 "It's so hard to know if any of these will be good or not" she said. I immediately thought how right she was and how even the recommendations these sites supply based on your previous viewing history often turned out to be terrible.
 We usually ended up checking reviews across multiple sites and publishers, which were often contradictory, before we settled on something, a time-consuming process in itself. 
 It occured to me that one single, no-frills search engine that pulls back review scores from respected sites like ImDB, Rotten Tomatoes etc would be really useful, especially considering how much time we are all spending on our couches during this pandemic.
+
+I settled on the name 'Should I Watch This?' or 'SIWT?' for short. As Matt Rudge says a few times in the Code Institute video tutorials: "A good programmer is a lazy programmer", I endeavoured to keep the site as streamlined as possible.
+Throughout the process of coding the site, I kept in mind how irritating I found other movie review sites which are full of ads, predictive text searches, slow-running etc.. and tried to only include the necessary feautures in my own site.
+I also decided to use a bootstrap template to get me started. I believe my Milestone One project demonstrated my skills in HTML and CSS, so I decided to save myself some time here and focus on getting the API functionality correct.
+Early in the devlopment stages I decided to ditch the standalone home page and search pages I had planned and instead had the search bar prominently featured on the landing page. Any results would be displayed deirectly below this 
+and if a user could see the item they were lookking for, clicking on it would bring them to a seperate page with additional info.
+
+The Code Institute tutorials regarding APIs did not cover what I was hoping to achieve here so I undertook quite a bit of external learning before and during the development of this project.
+As I progressed it became apparent that my hopes of connecting to multiple APIs were not achievable because the established, recognisable sites all charge for access. Sadly I can't afford this at the moment so I settled on the one free, reliable API that I could find which had a large database: 'TMBD'.
+In lieu of including established, paid access APIs I included a link to the ImDB page for each search result available to my site users.
+
+At the suggestion of my mentor I also decided to include chat functionality, via the Disqus app, under the search results and on a seperate deicated Forum page.
 
 ## Link to the website
 
@@ -14,43 +26,28 @@ https://github.com/menacethedenis/CI-milestone-one-OFAC_website
 
 # UX
 
-I wanted to design and create a website that would be useful for fans of the band in terms of ease of access to music, videos, information and merchandise in a clean, stylish layout. And also useful for the band themselves in terms of presenting aspects and products they may want to focus on, and making themselves accessible and contactable.
+I wanted to create a website that would prove useful for anyone looking to view ratings for movies and tv shows and display them in a streamlined, no-nonsense layout. 
+'Keep it simple' was the mantra I kept repeating to myself and I tried to keep every feature just one-click away.
 
 ### **User Stories**
 
-Putting myself in the shoes of both website visitors and the band I created the following user stories:
-* As a visitor I want to be able to easily access important information about the band
-* As a visitor I want to be able to stream audio and video of the bands music by clicking on links and embeds
-* As a visitor I want to be able to contact the band by clicking on a form
-* As a visitor I want to be able to download the band's music by clicking a link
-* As a visitor I want to be able to view and purchase the band's merchandise from the website
-* As a band member I want to be able to present important information prominently
-* As a band member I want to be able to receive messages from fans or booking agents 
+Bearing in mind the features of other sites which frustrated me when using them, I created the following user stories:
+* As a user I want to be able to easily access movie review scores.
+* As a user I want an easy to use site providing a streamlined experience, the opposite of what more established sites provide.
+* As a user I want to be able to search for my movie with no difficulty and see results instantly.
+* As a user if I search for something that may have multiple results (such as 'Star Wars') than all relevant results should be displayed.
+* As a user I would like to discuss the movies I like or dislike with other users.
 
 ### **Wire frames**
 
-Using the Balsamiq desktop app I created the following wireframes as a guideline for my page designs, focusing on mobile first design and then a general desktop layout. Before drawing these up I looked at many websites of some of my favourite bands and made notes of features, layouts and presentations I admired.
+I used the Balsamiq desktop app to develop wireframes to use as guidelines for my page layouts.
+I focussed on mobile first design, then tablet sizing and then desktop layout.
 
-Index/Home page
- 
- <img src="assets/wireframes/index - mobile.PNG" width=200>
+The wireframes are available to view on a pdf in the assets folder of this project:
+assets/wireframes/Wireframes_Milestone2_Denis Lymer.pdf
 
-Music page
- 
- <img src="assets/wireframes/music - mobile.PNG" width=200>
-
-Bio page
- 
- <img src="assets/wireframes/bio - mobile.PNG" width=200>
-
-Store page
- 
- <img src="assets/wireframes/store - mobile.PNG" width=200>
-
-General desktop layout
- 
- <img src="assets/wireframes/desktop.PNG" width=200>
-
+Download link:
+https://c28e0d1a-181e-43e6-a8c0-f2acb6318d5f.ws-us02.gitpod.io/files/download/?id=732003e4-baf5-4fa6-a412-9aa1dda7f8fb
 # Features
 
 ## Existing Features

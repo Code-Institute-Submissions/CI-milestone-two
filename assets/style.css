@@ -1,6 +1,3 @@
-/* -------------------------------------General */
-
-
 /* -------------------------------------Buttons */
 .btn-primary {
     padding: 10px;
@@ -17,7 +14,6 @@
   padding-top: 0px;
 }
 
-
 .nav-item {
     display:inline;
 }
@@ -31,14 +27,12 @@
     padding: 1.5em;
     text-align:center;
     margin:auto;
-    text-orientation: center;
 }
 
 #decidemsg {
     padding: 1.5em;
     text-align:center;
     margin:auto;
-    text-orientation: center;
 }
 
 .text-uppercase {
@@ -62,7 +56,8 @@
     background-color: white;  
     height: 250px; 
     margin:auto;
-    padding:0;
+    padding-top:2em;
+    margin-bottom: 50px;
 }
 
 .about-img {
@@ -100,6 +95,17 @@
     padding-right: 0;
 }
 
+/* -------------------------------------Forum */
+.forumheader {
+    padding: 2em;
+    text-align: center;
+}
+
+.disclaimer {
+    padding: 1em;
+    text-align: center;
+}
+
 /* -------------------------------------Footer */
 #footer-mov {
     padding: 20px;
@@ -108,6 +114,10 @@
 
 .footer-padding {
     padding-top:40px;
+}
+
+.about-footer {
+    margin-top: 50px;
 }
 
 /* -------------------------------------Search Results */
@@ -130,6 +140,10 @@
     padding-top: 3em;
 }
 
+.userresults {
+    margin-bottom: 50px;
+}
+
 /* -------------------------------------Disqus */
 #disqus_thread {
     margin-top: 4em;
@@ -138,8 +152,7 @@
 
 }
 /* -------------------------------------Media Queries */
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* -------------------------------------Small devices */
 @media only screen and (max-width: 600px) {
     .bgdimg {
     display:none;
@@ -149,7 +162,7 @@
  }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* -------------------------------------Tablet devices */
 @media only screen and (max-width: 768px) {
  .bgdimg {
     display:none;
@@ -159,14 +172,9 @@
  }
 }
 
-
-
-/* Large devices (laptops/desktops, 992px and up) */
+/* -------------------------------------Large devices */
 @media only screen and (min-width: 992px) {
     #movies .col-md-3 .tmdb {
     height: 390px;
     }
 }
-
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
