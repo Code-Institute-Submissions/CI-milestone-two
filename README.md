@@ -14,15 +14,15 @@ The Code Institute tutorials regarding APIs did not cover what I was hoping to a
 As I progressed it became apparent that my hopes of connecting to multiple APIs were not achievable because the established, recognisable sites all charge for access. Sadly I can't afford this at the moment so I settled on the one free, reliable API that I could find which had a large database: 'TMBD'.
 In lieu of including established, paid access APIs I included a link to the ImDB page for each search result available to my site users.
 
-At the suggestion of my mentor I also decided to include chat functionality, via the Disqus app, under the search results and on a seperate deicated Forum page.
+At the suggestion of my mentor I also decided to include chat functionality, via the Disqus app, under the search results and on a seperate dedicated Forum page.
 
 ## Link to the website
 
-https://menacethedenis.github.io/CI-milestone-one-OFAC_website/
+https://menacethedenis.github.io/CI-milestone-two/
 
 ## Link to the github repository
 
-https://github.com/menacethedenis/CI-milestone-one-OFAC_website
+https://github.com/menacethedenis/CI-milestone-two
 
 # UX
 
@@ -41,33 +41,31 @@ Bearing in mind the features of other sites which frustrated me when using them,
 ### **Wire frames**
 
 I used the Balsamiq desktop app to develop wireframes to use as guidelines for my page layouts.
-I focussed on mobile first design, then tablet sizing and then desktop layout.
+I focused on mobile first design, then tablet sizing and then desktop layout.
 
-The wireframes are available to view on a pdf in the assets folder of this project:
+The wireframes are available to view on a .pdf in the assets folder of this project:
 assets/wireframes/Wireframes_Milestone2_Denis Lymer.pdf
 
 Download link:
 https://c28e0d1a-181e-43e6-a8c0-f2acb6318d5f.ws-us02.gitpod.io/files/download/?id=732003e4-baf5-4fa6-a412-9aa1dda7f8fb
+
 # Features
 
 ## Existing Features
 
 ### **General**
 
-* Feature 1: Cookies warning - In line with the recent focus on GDPR and the fact that almost every website you visit flashes a cookies warning nowadays, I decided to include one on the top of the home page. It links to a real privacy policy which I generated online.
-* Feature 2: Navbar burger icon - This is positioned in the top-right of all pages and toggles a vertical list open and closed. I experimented with leaving it open and displaying horizontally at larger viewports but decided to implement a larger menu bar further down the page instead.
-* Feature 3: Menu bar: On larger viewports a horizontal menu bar appears for ease of access to the different website pages. There are hover transition and colour effects on the items and Font Awesome icons for each.
-* Feature 4: Band logo transition - The main band logo has a fade-in transition.
-* Feature 5: Contact form - The left section of the footer contains a contact button which opens a modal.
-* Feature 6: Social Media links - The middle section of the footer contains Font Awesome icons with working links to the real band Facebook and Twitter accounts, and to the band hashtag on Youtube and Instagram. There is a colour change hover effect on the icons.
-* Feature 7: Stream Music links - The right section of the footer contains Font Awesome icons with working links to the band's music on Spotify, Apple Music, Bandcamp and SoundCloud. There is a colour change hover effect on the icons.
+* Feature 1: Navbar: In keeping with my 'one-click away' philosophy for this site, I decided to leave the Navbar links open and visible across all screen sizes.
+* Feature 2: Footer: The footer has working links to social media sites on the right and to the About page on the left. The icons are from Font-Awesome.
+* Feature 3: Theme: I used a bootstrap template from bootswatch.com to kickstart my css and layouts.
 
 ### **Home page**
 
-* Feature 8: Carousel - The home page displays a carousel slideshow which automatically transitions images every 5 seconds. There are also direction control buttons to transition the images. On smaller viewports the carousel is hidden by a CSS Media Query as I felt it was unnecessary and cluttering the screen.
-* Feature 9: Video - Beneath the carousel there is a youtube embed of the most recent of the band's releases.
+* Feature 4: Serach bar - The home page prominently displays a brief message detailing the site's purpose and a large search bar with a search prompt. This should instantly let the user know what the site is for.
+* Feature 5: Results - Using Javascript the search function connnects to the TMDB API and pulls back results to the browser window. The user can see the movie or tv show's poster, name and a button underneath labelled 'Details'.
+* Feature 6: Lower page Image - The frustrated/scared woman repeating image only appears on large screens. CSS media queries were used to remove it on tablet and mobile screen sizes.
 
-### **Music page**
+### **Details page**
 
 * Feature 10: Bandcamp embeds - The music page has bandcamp embeds of all the bands releases displayed vertically in reverse chronological order. The user can stream or share music directly from these, or access the band's bandcamp page externally. I experimented with an opaque background image and displaying the embeds in columns and rows but preferred the vertical presentation and black background as I felt it focussed atttention on each individual release.
 
