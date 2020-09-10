@@ -4,11 +4,11 @@ My idea for my Milestone 2 project came from an almost throwaway comment from my
 We usually ended up checking reviews across multiple sites and publishers, which were often contradictory, before we settled on something, a time-consuming process in itself. 
 It occured to me that one single, no-frills search engine that pulls back review scores from respected sites like ImDB, Rotten Tomatoes etc would be really useful, especially considering how much time we are all spending on our couches during this pandemic.
 
-I settled on the name 'Should I Watch This?' or 'SIWT?' for short. As Matt Rudge says a few times in the Code Institute video tutorials: "A good programmer is a lazy programmer", I endeavoured to keep the site as streamlined as possible.
+I settled on the name 'Should I Watch This?' or 'SIWT?' for short.  I endeavoured to keep the site as streamlined as possible.
 Throughout the process of coding the site, I kept in mind how irritating I found other movie review sites which are full of ads, predictive text searches, slow-running etc.. and tried to only include the necessary feautures in my own site.
-I also decided to use a bootstrap template to get me started. I believe my Milestone One project demonstrated my skills in HTML and CSS, so I decided to save myself some time here and focus on getting the API functionality correct.
-Early in the devlopment stages I decided to ditch the standalone home page and search pages I had planned and instead had the search bar prominently featured on the landing page. Any results would be displayed deirectly below this 
-and if a user could see the item they were lookking for, clicking on it would bring them to a seperate page with additional info.
+As Matt Rudge says a few times in the Code Institute video tutorials: "A good programmer is a lazy programmer", with this in mind I decided to use a bootstrap template to get me started. I believe my Milestone One project demonstrated my skills in HTML and CSS, so I decided to save myself some time here and focus on getting the API functionality correct.
+Early in the development stages I decided to ditch the standalone home page and search pages I had planned and instead had the search bar prominently featured on the landing page. Any results would be displayed directly below this 
+and if a user could see the item they were looking for, clicking on it would bring them to a separate page with additional info.
 
 The Code Institute tutorials regarding APIs did not cover what I was hoping to achieve here so I undertook quite a bit of external learning before and during the development of this project.
 As I progressed it became apparent that my hopes of connecting to multiple APIs were not achievable because the established, recognisable sites all charge for access. Sadly I can't afford this at the moment so I settled on the one free, reliable API that I could find which had a large database: 'TMBD'.
@@ -42,6 +42,7 @@ Bearing in mind the features of other sites which frustrated me when using them,
 
 I used the Balsamiq desktop app to develop wireframes to use as guidelines for my page layouts.
 I focused on mobile first design, then tablet sizing and then desktop layout.
+You can see in the wireframes I had originally planned a seperate page for the search functionality but decided to incorporate it into the main page to match my user story focusing on ease of use.
 
 The wireframes are available to view on a .pdf in the assets folder of this project:
 assets/wireframes/Wireframes_Milestone2_Denis Lymer.pdf
@@ -61,29 +62,33 @@ https://c28e0d1a-181e-43e6-a8c0-f2acb6318d5f.ws-us02.gitpod.io/files/download/?i
 
 ### **Home page**
 
-* Feature 4: Serach bar - The home page prominently displays a brief message detailing the site's purpose and a large search bar with a search prompt. This should instantly let the user know what the site is for.
+* Feature 4: Search bar - The home page prominently displays a brief message detailing the site's purpose and a large search bar with a search prompt. This should instantly let the user know what the site is for.
 * Feature 5: Results - Using Javascript the search function connnects to the TMDB API and pulls back results to the browser window. The user can see the movie or tv show's poster, name and a button underneath labelled 'Details'.
 * Feature 6: Lower page Image - The frustrated/scared woman repeating image only appears on large screens. CSS media queries were used to remove it on tablet and mobile screen sizes.
 
 ### **Details page**
 
-* Feature 10: Bandcamp embeds - The music page has bandcamp embeds of all the bands releases displayed vertically in reverse chronological order. The user can stream or share music directly from these, or access the band's bandcamp page externally. I experimented with an opaque background image and displaying the embeds in columns and rows but preferred the vertical presentation and black background as I felt it focussed atttention on each individual release.
+* Feature 7: Detailed results - When a user clicks the 'Details' button under the search results the site navigates to a new page. Here a user can view details about the movie such as title and poster image. Rating, Tagline, Genre, Release Date and Runtime.
+* Feature 8: Plot - The movie plot is displayed beneath the detailed results.
+* Feature 9: View ImDB button - This button links to the ImDB page for the selected movie. This function is included in lieu of having to pay for API access.
+* Feature 10: Go back - The user can return to the search/main page here if they are not happy with the result or want to check for something else.
+* Feature 11: Disqus app - At the bottom of the page a fully functional Disqus app is embedded. This allows users to login and caht to other users about the particular movie.
 
-### **Bio page**
+### **About page**
 
-* Feature 11: About section - This contains a brief history of the band and a working link to the band's record label website.
-* Feature 12: Discography section - This contains information about the band's releases displayed as a timeline. When a release title is hovered over, the artwork of the release appears. This effect is disabled on smaller viewports via a CSS Media Query. The release dates are hidden on smaller viewports as they were cluttering the display.
-* Feature 13: Review section - This contains excerpts from published reviews of the band.
+* Feature 12: About section - This contains a brief mission statement. There is a link to the Forum page in the text. There is also a copyright-free placeholder image in lieu of a proper website logo. This only appears on large screens. It does not display on tablet or mobile sizes, the mission statment is centred instead.
+* Feature 13: Footer - The link to About that appears on other pages footers is changed to allow the user to navigate back to the search/home page instead.
 
-### **Store page**
+### **Forum page**
 
-* Feature 14: Big Cartel links: This page displays images of band merchandise which is available to purchase from their big cartel webstore. They display horizontally on larger viewports and vertically on smaller viewports. There is a hover opacity effect on each image. I experimented with embedding the big cartel pages via iFrames but they did not display well so decided images with external links was a better option.
+* Feature 14: Disqus app - This page is dedicated to the Disqus app so users can chat to each other outside of search results. There is a brief disclaimer displayed at the top of the page.
 
 
 ## Features Left to Implement
 
-* The ability to record users answers to the cookie disclaimer needs to be added. Currently the warning can be closed with the 'x' in the corner only.
-* The contact form needs to be hooked up on the backend.
+* I would have loved to spend more time on this project. I will definitely be returning to it once I have completed the course as I believe it has strong potential to be a going concern. Unfortunately I am up against the clock now in terms of my finish date so need to move on.
+The CSS in general could be slicker. I will look into overhauling that.
+* I would like to recode the javascript to connect to more APIs from established sites. That will require monetary investment but is something I would like to do once I am employed again.
 
 
 # Technologies Used
@@ -94,17 +99,20 @@ HTML5 was used for the general structuring and positioning on the website.
 ## CSS3 - https://www.w3.org/Style/CSS/Overview.en.html
 CSS3 was used to style the website.
 
+## Bootswatch - https://bootswatch.com/
+Bootswatch offer free Bootstrap templates. I used the Solar template to base my HTML and CSS stylings and layout on: https://bootswatch.com/solar/
+
 ## Bootstrap - https://www.bootstrapcdn.com/
-Bootstrap v4.3.1 was used for mobile-first design and responsiveness, styling, grid layouts and navigation.
+Bootstrap v4.3.1 was used via Bootswatch template for mobile-first design and responsiveness, styling, grid layouts and navigation.
 
 ## JQuery - https://jquery.com/
-JQuery was used to deploy javascript functionality with bootstrap.
+JQuery was used to deploy javascript functionality with bootstrap/bootswatch.
+
+## Javascript - https://www.javascript.com/
+Javascript was used to access the API and manipulate the results, based on search info inputted by the user.
 
 ## Font Awesome - https://www.bootstrapcdn.com/fontawesome/
-Font Awesome icons were used for the Social Media & Stream Music inks in the footer, and for the menu items in the large menu bar.
-
-## Google Fonts - https://fonts.google.com/
-Google fonts were used for all the text on the website. The fonts used were Quicksand & Rokkitt.
+Font Awesome V4.7.0 icons were used for the Social Media links in the footer.
 
 ## Git, Gitpod & Github - https://github.com/
 Gitpod was used as the development environment. Git was used to push my work from my local repository to my Github repository. Github hosts the project repository for others to see and the final deployed version of the website.
@@ -112,47 +120,62 @@ Gitpod was used as the development environment. Git was used to push my work fro
 # Testing
 
 ## Manual Testing
-As I was building this project I was ensuring to test the functionality of pagelinks, external links, navigation, features and elements as I was proceeding. At the end of every session I not only checked any new features I had added, but also all my existing features to ensure any changes I had made had not adversely affected other existing features. I used a word document to track features that were not working correctly or that needed minor fixes.
+Based on feedback from My Milestone one project, this time around I documented my testing in a word document. This is available to view in the assets folder of this project or can be downloaded directly at: https://c28e0d1a-181e-43e6-a8c0-f2acb6318d5f.ws-us02.gitpod.io/files/download/?id=84ab1048-22ab-45a8-91e9-ca88f2e8cd78 
 
-## Chrome DevTools
+You will see a long gap in testing dates between July and September, this is due to my emigrating from Ireland which interrupted development on the project. In addition to the word doc, similar to my milestone one project, as I was building this project I was ensuring to test the functionality of pagelinks, external links, navigation, features and elements as I was proceeding. At the end of every session I not only checked any new features I had added, but also all my existing features to ensure any changes I had made had not adversely affected other existing features.
+
+All code was checked with the following validator: https://validator.w3.org/
+
+## Responsiveness Testing with Chrome DevTools
 All website pages have been extensively tested for mobile-first responsiveness using Chrome DevTools. I personally checked responsiveness on the following devices:
-* Windows 10 laptop
-* Windows 10 desktop
 * Android 10 phone
 * Android 10 tablet 
+* Windows 10 laptop
+* Windows 10 desktop
 
-I asked friends to check responsiveness on:
-* iMac - MacOS 10.15
+Some colleagues were asked to check responsiveness on:
 * iPad - iPadOS 13.5
 * iPhone - iOS 13.5
-
-## Responsiveness Issues
-
-* **Carousel** - The varying sizes of the images used in the slideshow were causing the other elements to jump around to accomodate them. I considered using a standard image size to eliminate this but was able to fix the issue with a combination of HTML and CSS positioning and justifying commands.
-* **Youtube Embed** - The video embed on the homepage was displaying poorly on smaller viewports, usually sitting halfway off the screen. this was fixed by adjusting the width and padding settings.
-* **Discography Timeline** - The vertical line broke out into columns and displayed very poorly on medium and large viewports. This was fixed by adding a blank, empty column to the right of the discography column. This served to keep the discography column from expanding too far with responsiveness.
+* iMac - MacOS 10.15
 
 # Deployment
- First I setup a local repository using Git. Then I setup a remote repository on Github. As I was building the project I was regularly saving my work using the Git Add functionality and tracking my changes with descriptive messages using the Git Commit functionality. I used Git Push to send to the remote repository. I was able to pick up exactly where I left off by clicking on the Gitpod button to access my workspace on the remote repository. When the project was finished I accessed the settings menu and activated GitHub Pages.
+ I started this project by using the Code Institute template available on Github at: https://github.com/Code-Institute-Org/gitpod-full-template. As I was building the project I was regularly saving my work using the Git Add functionality and tracking my changes with descriptive messages using the Git Commit functionality. I used Git Push to send to the remote repository. I was able to pick up exactly where I left off by clicking on the Gitpod button to access my workspace on the remote repository. When the project was finished I accessed the settings menu and activated GitHub Pages.
+ 
+ Other users can clone the project by entering the following command in their terminal: Git Clone https://github.com/menacethedenis/CI-milestone-two.git
  
  The finished website is deployed and can be viewed via Github pages:
- https://menacethedenis.github.io/CI-milestone-one-OFAC_website/
+ https://menacethedenis.github.io/CI-milestone-two/
 
 # Credits
 ## Content
-All images, music and text are copyright and used with the permission of Only Fumes & Corpses and Lockjaw Records. Except the reviews which are reproduced with permission from the authors.
 
-Some websites I used for design inspiration and research included:
-* http://epitaph.com/artists/defeater/bio
-* https://www.deftones.com/
-* http://www.bitchfalcon.com/
-* https://www.emmaruthrundle.com/
-* https://www.daughtersofficial.com/
+As the API functionality I wanted to use in this project was not covered in the Code Institute tutorials, I had to do a great deal of external research and learning over the course of this project. Some of the sites I found very helpful in general were:
+https://rapidapi.com/blog/how-to-use-an-api-with-javascript/
+https://www.youtube.com/watch?v=YsPqjYGauns
+https://www.youtube.com/user/TechGuyWeb
+https://www.youtube.com/user/shiffman
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction
 
-The privacy policy was generated at:
-* https://www.privacypolicygenerator.info/
+For the Javascipt functionality I relied heavily on Github and Stack Overflow threads for more detailed understanding. I repurposed or reused some code snippets from some of the following:
+
+https://stackoverflow.com/questions/957537/how-can-i-display-a-javascript-object/4293047#4293047
+https://stackoverflow.com/questions/1625208/print-content-of-javascript-object?noredirect=1&lq=1
+https://stackoverflow.com/questions/1966503/does-imdb-provide-an-api
+https://github.com/algolia/algoliasearch-client-javascript
+https://github.com/EmmaSemutenga/movieInfo/blob/master/js/main.js
+https://github.com/bvaughn/js-worker-search
+https://github.com/FriesFlorian/viralvideos
+https://github.com/anshulrgoyal/imdb-scrapper
+
+The free API database I used was The Movie Database (TMDB):
+
+https://developers.themoviedb.org/3/movies/get-movie-credits
+
+I also linked search results to the more established and well-known review site ImDB:
+
+https://www.imdb.com/
 
 ## Acknowledgements
-I would like to thank the tutors at the Code Institute and my mentor Spencer Barriball for their outstanding support, advice and encouragement. 
+I would like to thank the tutors at the Code Institute and my mentor Spencer Barriball for their outstanding support, advice and encouragement. Neil Kavanagh who graded my Milestone One project also gave me some excellent and useful feedback.
 
 Thanks also to the Code Institute student care team for keeping me on track, checking in and always being so understanding, empathetic and helpful.
